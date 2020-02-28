@@ -8,17 +8,17 @@
 
 <div>
   <label>Use letters</label>
-  <input type="checkbox" />
+  <input (change)="useLetters()" type="checkbox" />
 </div>
 
 <div>
   <label>Use Numbers</label>
-  <input type="checkbox" />
+  <input (change)="useNumbers()" type="checkbox" />
 </div>
 
 <div>
   <label>Use Symbols</label>
-  <input type="checkbox" />
+  <input (change)="useSymbols()" type="checkbox" />
 </div>
 
 <div>
@@ -28,5 +28,8 @@
 
 <div>
   <label>Your Password</label>
-  <input [value]="password"/>
+  <input [value]="password" />
 </div>
+
+<!-- prints out information -->
+{{ password }}
