@@ -22,7 +22,12 @@
 
 <div>
   <!-- event binding syntax -->
-  <button (click)="onButtonClick()">Generate</button>
+  <button
+    (click)="onButtonClick()"
+    [disabled]="!(length && (letters || numbers || symbols))"
+  >
+    Generate
+  </button>
 </div>
 
 <div>
